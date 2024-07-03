@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+        color:brown;
+        }
+        [type="text"]{
+            color: blueviolet;
+        }
+        [type*="num"]{
+            color: lightsalmon;
+        }
+        [type^="e"]{
+            color: yellowgreen;
+        }
+        [type="submit"]{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="background-color:hotpink;">
+
+   <form>
+    <h2>Form using Attribute Selectors</h2>
+    <label for="fname">First Name:</label>
+    <input id="fname" name="name" type="text" placeholder="jonh"/><br><br>
+    <label for="lname">Last Name:</label>
+    <input id="lname" name="name" type="text" placeholder="name"/><br><br>
+    <label for="mail">E-mail:</label>
+    <input id="mail" name="name" type="e-mail" placeholder="mail"/><br><br>
+    <label for="num">Phone Number:</label>
+    <input id="num" name="name" type="numbers" placeholder="num"/><br><br>
+    <input type="submit"/>
+    
+    
+   </form>
+</fieldset>
+</body>
+</html>
