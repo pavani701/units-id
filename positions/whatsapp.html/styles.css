@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700')
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'open sans', sans-serif;   
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009688 0%,#009688 130px, #d9dbd5 130%, #d9dbd5 100%);
+}
