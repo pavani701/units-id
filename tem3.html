@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        .r1{
+            grid-row: 1/4;
+            background-color: bisque;
+        }
+        .r2{
+            grid-column: 2/4;
+            background-color: greenyellow;
+        }
+        .r3{
+            background-color: brown;
+            grid-column: 4/5;
+        }
+        .r4{
+            background-color: brown;
+            grid-row: 2/3;
+        }
+        .r5{
+            background-color: brown;
+            grid-row: 2/3;
+        }
+        .r6{
+            grid-row: 2/4;
+            background-color: blueviolet;
+        }
+        .r7{
+            grid-row: 3/4;
+            background-color: brown;
+        }
+        .r8{
+            grid-row: 3/4;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="r1">1</div>
+<div class="r2">2</div>
+<div class="r3">3</div>
+<div class="r4">4</div>
+<div class="r5">5</div>
+<div class="r6">6</div>
+<div class="r7">7</div>
+<div class="r8">7</div>
+
+</div>
+</body>
+</html>
