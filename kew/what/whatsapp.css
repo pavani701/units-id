@@ -188,7 +188,7 @@ ion-icon{
     border-radius: 20px;
     font-size: 1em;
 }
-.date{
+.datefixed{
     display: flex;
     justify-content: center;
     position: sticky;
