@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        padding: 100px;
+        /* height: 100%;
+        width: 100%; */
+    }
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        background-color: black;
+        color: white;
+    }
+    span{
+        color: red;
+       
+    }
+    .main1{
+        display: flex;
+        background-color: black;
+        color: white;
+        padding-left: 800px;
+        gap:20px;
+        justify-items: end;
+        align-items: end;
+        justify-content: end;
+        align-content: end;
+        
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .image{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .center{
+        position: absolute;
+        text-align: center;
+        color: white;
+    }
+    .products{
+        display: flex;
+        gap: 900px;
+    }
+    .view{
+        padding-left: 170px;
+        color: red;
+    }
+    .third{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <div><b>SIXTEEN</b> <span><b>CLOTHING</b></span></div>
+            <div class="main1">
+               <div>Home</div>
+               <div>Our Products</div>
+               <div>About Us</div>
+               <div>Contact Us</div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./slide_01.jpg">
+            <div class="center">NEW ARRIVALS ON SALE</div>
+        </div>
+        <div class="second">
+            <div class="products">
+                <div>Latest Products</div>
+            <div class="view"> View all Products</div>
+        </div>
+        <div class="third">
+            <div class="imgs">
+               <div class="img1"> <img src="./product_01.jpg">Title goes here</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
