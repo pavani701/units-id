@@ -1,0 +1,111 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 400px;
+	height: 600px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+header {
+	background-color: #075e54;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-bar {
+	width: 70%;
+}
+
+.search-bar input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.chat-list {
+	padding: 10px;
+}
+
+.chat {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.chat img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.chat-info {
+	flex-grow: 1;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.message {
+	color: #666;
+}
+
+.chat-window {
+	padding: 10px;
+}
+
+.chat-header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.chat-header img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.chat-messages {
+	padding: 10px;
+}
+
+.input-field {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.input-field input {
+	width: 80%;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+}
+
+.input-field button {
+	width: 20%;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #075e54;
+	color: #fff;
+	cursor: pointer;
+}
