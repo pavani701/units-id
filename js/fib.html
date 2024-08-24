@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num=+prompt("enter a number:")
+        a=0,b=1
+        i=1,res=""
+        while(i<=num){
+            res=res+a+""
+            c=a+b
+            a=b
+            b=c
+            i++
+        }
+        console.log(num+"fib number:"+res)
+    </script>
+</body>
+</html>

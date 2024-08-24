@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num=+prompt("enter a number:")
+        a=0,b=1,nonfib=0
+        while(nonfib!=num){
+            for(i=a+1;i<b;i++){
+                nonfib++
+                if(nonfib==num){
+                    console.log(i)
+                    break
+                }
+            }
+            c=a+b
+            a=b
+            b=c
+        }
+    </script>
+</body>
+</html>

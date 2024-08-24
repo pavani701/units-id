@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        input=+prompt("enter a number:")
+        res=0
+        if(input<0){
+            num=input*-1
+        }
+        while(num!=0){
+            rem=num%10
+            res=res*10+rem
+            num=Math.floor(num/10)
+        }
+        if(input<0){
+            console.log(res*-1)
+        }
+        else{
+            console.log(res)
+        }
+    </script>
+</body>
+</html>
