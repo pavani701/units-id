@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      x = prompt("enter string:");
+      y = x[0].toUpperCase();
+      z = x.slice(1);
+      console.log(y.concat(z));
+
+      let X = "world";
+      Y = X[0].toLowerCase();
+      Z = X.slice(1);
+      console.log(Y.concat(Z));
+
+      let str = prompt("enter string:");
+      let noVowels = str.replace(/[aeiou]/gi, "");
+      console.log(noVowels);
+
+      let str1 = "world";
+      let noVowels1 = str.replace(/[aeiou]/gi, "");
+      console.log(noVowels1);
+    </script>
+  </body>
+</html>

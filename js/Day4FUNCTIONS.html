@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isPalindrome(str) {
+        j = str.length - 1;
+        for(i=0;i<str.length/2;i++) {
+          if (str[i]!=str[j]) {
+            return false;
+          }
+          j--;
+        }
+        return true;
+      }
+
+      str1 = "pavani";
+      console.log(isPalindrome(str1));
+
+using arrow function:
+    // let add=(num1,num2)=>num1+num2;
+    // let result=add(5,7);
+    // console.log(result);
+
+    function add(num1,num2){
+        return num1+num2;
+    }
+    result=add(2,5)
+    console.log(result)
+
+
+
+    </script>
+  </body>
+</html>
