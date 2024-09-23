@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = [12.345, 67.89, 34.567];
+      res = "";
+      for (i of x) {
+        res += i.toFixed(2) + " ";
+      }
+      console.log(res);
+
+      let y = ["123abc", "456def", "789ghi"];
+      res1 = "";
+      for (i of y) {
+        res1 += parseInt(i) + " ";
+      }
+      console.log(res1);
+
+      let isint = [12, 34.56, 78, 90.12];
+      for (i of isint) {
+        console.log(Number.isInteger(i));
+      }
+
+      let nan = ["abc", 123, "def", 456];
+      for (i of nan) {
+        console.log(isNaN(i));
+      }
+
+      let percisions = [123.456, 789.012, 345.678];
+      for (i of percisions) {
+        console.log(i.toPrecision(4));
+      }
+
+      var min = 10000;
+      var max = 99999;
+      var num = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(num);
+    </script>
+  </body>
+</html>
