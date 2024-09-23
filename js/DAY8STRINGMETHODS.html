@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5];
+      let res = [];
+      arr.map((i) => {
+        res += [i * 2] + " ";
+      });
+      console.log(res);
+
+      let uppercaseletter = ["hello", "world"];
+      let upper_res = [];
+      uppercaseletter.map((upper) => {
+        upper_res = upper_res + upper.toUpperCase() + " ";
+      });
+      console.log(upper_res);
+
+      let even_num = [1, 2, 3, 4, 5];
+      let even_res = [];
+      even_num.filter((i) => {
+        if (i % 2 == 0) {
+          even_res += i + " ";
+        }
+      });
+      console.log(even_res);
+
+      let filter_str = ["hello", "world", "abc"];
+      let filter_res = [];
+      filter_str.filter((i) => {
+        if (i == "hello" || i == "world") filter_res = filter_res + i + " ";
+      });
+      console.log(filter_res);
+
+      let each_num = [1, 2, 3, 4, 5];
+      let each_res = [];
+      each_num.forEach((i) => {
+        console.log(i);
+      });
+
+      let each_str = ["hello", "world"];
+      let each_str_res = [];
+      each_str.forEach((i) => {
+        each_str_res += i + "! ";
+      });
+      console.log(each_str_res);
+
+      const all_positive = (i) => i > 0;
+      const array1 = [1, 2, 3, 4, 5];
+      console.log(array1.every(all_positive));
+
+      let str5 = (i) => i <= 5;
+      let arr2 = ["hello", "world", "abc"];
+      console.log(arr2.every(str5));
+
+      let str = (i) => i % 2 == 0;
+      let str_even = [1, , 2, 3, 4, 5];
+      console.log(str_even.some(str));
+
+      let str1 = (i) => i == str_x.includes("x");
+      let str_x = [1, , 2, 3, 4, 5];
+      console.log(str_x.some(str1));
+
+      let first_num = [1, 2, 3, 4, 5];
+      let ress = first_num.find((x) => x % 2 == 0);
+      console.log(ress);
+
+      let first_str = ["hello", "world", "max"];
+      let x = first_str.find((x) => "max" == x);
+      console.log(x);
+
+      let first_index = [1, 2, 3, 4, 5];
+      let index_fir = first_index.findIndex((x) => x % 2 == 0);
+      console.log(index_fir);
+
+      let first_str_index = ["hello", "world", "max"];
+      let index_str = first_str_index.findIndex((x) => "max" == x);
+      console.log(index_str);
+    </script>
+  </body>
+</html>
