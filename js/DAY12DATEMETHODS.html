@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let date_time=new Date()
+console.log("Current date and time "+date_time)
+
+var date = new Date('2024-8-28');
+console.log(("New date string " +date.getFullYear()) + '-' + (date.getMonth()+1) + '-' +
+(date.getDate()+3) );
+
+let todayDate=new Date('2024-08-28')
+console.log(new Intl.DateTimeFormat().format(todayDate))
+let dates=((+todayDate.getMonth()+1)+'/'+todayDate.getDate()+'/'+todayDate.getFullYear())
+console.log("Formatted date string "+dates)
+
+let dateOne=new Date('2024-08-28')
+let dateTwo=new Date('2024-09-01')
+let twoDiffDate=Math.abs(dateTwo - dateOne)
+let diffDays=Math.floor(twoDiffDate/(1000*60*60*24))
+
+    </script>
+</body>
+</html>
