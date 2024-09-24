@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .containers{
+            border: 2px solid brown;
+            background-color: papayawhip;
+            height: 60vh;
+            width: 40vh;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        img{
+            height: 30vh;
+            width: 15vh;
+            border-radius: 20px;
+            margin-top: -20px;
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            padding-left: 90px;
+          
+        }
+        
+    </style>
 </head>
 <body>
-    <img>
     <script>
-      let img=document.getElementsByName("img");
-      img[0].setAttribute("src","..\js\ 1698071066726.jpg");
-      img[0].setAttribute("height","100");
-      img[0].style.border="5px solid blue";
-      img[0]=style.backgroundcolor="ash";
+        let container=document.createElement("div");
+        container.classList.add("containers");
+        document.body.appendChild(container);
 
+       let h6=document.createElement("h6");
+       h6.style.textAlign="center"
+       h6.style.fontSize= "25px"
+       h6.innerHTML="ID CARD";
+       container.appendChild(h6);
 
+       let img=document.createElement("img");
+       img.style.textAlign="center";
+       img.setAttribute('src','1698071066726.jpg');
+       container.appendChild(img);
 
+       let div=document.createElement("div");
+       div.style.textAlign="center";
+       container.appendChild(div)
+
+       let p=document.createElement("p");
+       p.innerHTML="Name:AKUL PAVANI<br>Branch:DATA SCIENCE<br>Roll.No:20XXXX701<br>Phn.no:0987654321";
+       div.appendChild(p)
     </script>
 </body>
 </html>
