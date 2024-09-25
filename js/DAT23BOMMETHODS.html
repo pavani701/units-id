@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            border: 2px solid;
+            border-radius: 1vh;
+            background-color: beige;
+            padding:3vh;
+            text-align: center;
+            margin: 10vh;
+        }
+        .div2{
+            border: 2px solid;
+            border-radius: 1vh;
+            background-color:blue;
+            padding: 10vh;
+            margin: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+   <form id="myfrom">
+        <label for="fname">first Name:</label><br>
+        <input type="text" id="fname"/><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname"/><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"/><br>
+        <label for="pNo">Phone No:</label><br>
+        <input type="tel" id="pNo"/><br><br>
+        <input type="submit">
+   </form>
+   </div>
+   <div id="div2">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+   </div>
+   <script>
+    let from=document.getElementById("myfrom");
+    from.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        let div2=document.getElementById("div2");
+        
+
+        let p=document.getElementsByTagName("p");
+        div2.classList.add("div2")
+
+        let input1=document.getElementById("fname");
+        p[0].innerHTML="FirstName : ${input1.value}";
+        localStorage.setItem("First Name",input1.value)
+        sessionStorage.setItem("First Name",input1.value)
+
+        // let p1=document.getElementsByTagName("p");
+        // p1[1].classList.add("div2");
+
+        let lNmae=document.getElementById("lname");
+        p[1].innerHTML="Last Nmae : ${lNmae.value}";
+        localStorage.setItem("Last Nmae",lNmae.value);
+        sessionStorage.setItem("Last Nmae",lNmae.value);
+
+        let email=document.getElementById("email");
+        p[2].innerHTML="Email : ${email.value}";
+        localStorage.setItem("Email",email.value);
+        sessionStorage.setItem("Email",email.value);
+        
+        let pNumber=document.getElementById("pNo");
+        p[4].innerHTML="Phone No : ${pNumber.value}";
+        localStorage.setItem("Phone No:",pNumber.value);
+        sessionStorage.setItem("Phone No:",pNumber.value);
+
+        let lastP=document.getElementsByTagName("p");
+        lastP[5].innerHTML="Submitted";
+
+
+    })
+
+   </script> 
+</div>
+</body>
+</html>
+
