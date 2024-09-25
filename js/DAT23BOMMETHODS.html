@@ -50,35 +50,25 @@
         event.preventDefault();
         let div2=document.getElementById("div2");
         
-
         let p=document.getElementsByTagName("p");
         div2.classList.add("div2")
 
         let input1=document.getElementById("fname");
         p[0].innerHTML="FirstName : ${input1.value}";
-        localStorage.setItem("First Name",input1.value)
-        sessionStorage.setItem("First Name",input1.value)
-
-        // let p1=document.getElementsByTagName("p");
-        // p1[1].classList.add("div2");
-
+        
         let lNmae=document.getElementById("lname");
-        p[1].innerHTML="Last Nmae : ${lNmae.value}";
-        localStorage.setItem("Last Nmae",lNmae.value);
-        sessionStorage.setItem("Last Nmae",lNmae.value);
-
+        p[1].innerHTML="Last Nmae : ${lNmae.value};
+        
         let email=document.getElementById("email");
         p[2].innerHTML="Email : ${email.value}";
-        localStorage.setItem("Email",email.value);
-        sessionStorage.setItem("Email",email.value);
-        
+
         let pNumber=document.getElementById("pNo");
         p[4].innerHTML="Phone No : ${pNumber.value}";
-        localStorage.setItem("Phone No:",pNumber.value);
-        sessionStorage.setItem("Phone No:",pNumber.value);
 
         let lastP=document.getElementsByTagName("p");
         lastP[5].innerHTML="Submitted";
+        
+        
 
 
     })
