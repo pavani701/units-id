@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            color: white;
+            width: 250px;
+            height: 400px;
+            padding: 20px;
+            border-radius: 10%;
+        
+        }
+        button{
+            height: 40px;
+            width: 30px;
+            border-radius: 80%;
+            justify-content: space-evenly;
+           
+
+        }
+        input{
+            width:200px;
+            height: 100px;
+            background-color: beige;
+            /* border-radius: 40%;
+            padding: 20%;
+            font-size: 20px; */
+        }
+        .middle
+    </style>
+</head>
+<div class="box">
+    <div class="middle">
+<input type="text" id="display"/><br>
+<button onclick="addvalue('AC')">AC</button>
+<button onclick="addvalue('>')">></button>
+<button onclick="addvalue('%')">1</button>
+<button onclick="addvalue('/')">1</button><br>
+<button onclick="addvalue('7')">7</button>
+<button onclick="addvalue('8')">8</button>
+<button onclick="addvalue('9')">9</button>
+<button onclick="addvalue('*')">*</button><br>
+<button onclick="addvalue('4')">4</button>
+<button onclick="addvalue('5')">5</button>
+<button onclick="addvalue('6')">6</button>
+<button onclick="addvalue('-')">-</button><br>
+<button onclick="addvalue('1')">1</button>
+<button onclick="addvalue('2')">2</button>
+<button onclick="addvalue('3')">3</button>
+<button onclick="addvalue('+')">+</button><br>
+<button onclick="addvalue('0')">0</button>
+<button onclick="addvalue('00')">00</button>
+<button onclick="addvalue('. ')">. </button>
+<button onclick="result()">=</button>
+</div>
+</div>
+<script>
+    let p=document.getElementById("p1")
+    let exp=document.getElementById("display")
+    function addvalue(x){
+        exp.value+=x
+    }
+    function result(){
+        let cal=eval(exp.value)
+        exp.value=cal;
+    }
+</script>
+
+
+<body>
+    
+</body>
+</html>

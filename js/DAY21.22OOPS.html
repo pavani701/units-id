@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class vehicle {
+            constructor(brand, model, year){
+                this.brand = brand;
+                this.model = model;
+                this.year = year;
+            }
+            startEngine() {
+                console.log(this.brand + " " + this.model + " engine started!");
+            }
+            accelerate() {
+                console.log(this.brand + " " + this.model + " is accelerating!");
+            }
+        }
+        class Car extends vehicle {
+           
+         constructor(brand, model, year, doors) {
+            super(brand, model, year);
+            this.doors = doors;
+        }
+        openTrunk() {
+            console.log(this.brand + " " + this.model + " trunk is open:");
+        }
+
+    }  
+    class Truck extends vehicle {
+        constructor(brand, model, year, capacity){
+            super(brand, model, year);
+            this.capacity = capacity;
+        }
+        loadCargo() {
+            console.log(this.brand + " " + this.model + "is loading" + this.capacity + "kg of cargo");
+        }
+    }  
+    let myCar = new Car("Honda", "Civic", 2022,4);
+    myCar.startEngine();
+    myCar.accelerate();   
+    myCar.openTrunk();
+
+    let myTruck = new Truck("ford", "f-150", 2020, 3000);
+    myTruck.startEngine();
+    myTruck.accelerate();
+    myTruck.loadCargo();
+
+    </script>
+</body>
+</html>

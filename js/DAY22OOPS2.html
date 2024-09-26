@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class BankAccount {
+            #balance;
+            #accountNumber;
+            constructor(accountNumber, initialBalance) {
+                this.#accountNumber = accountNumber;
+                this.#balance = initialBalance;
+            }
+            deposit(amount) {
+                this.#balance += amount;
+            }
+            withdraw(amount) {
+                this.#balance = amount;
+            }
+            withdrawBalance() {
+                return this.#balance;
+            }
+        }
+        let myAccount = new BankAccount(123456789, 1000);
+        myAccount.deposit(500);
+        myAccount.withdraw(200);
+        console.log(myAccount.getBalance());
+
+    class mathhelper {
+         static addNumber(a, b) {
+            return a + b;
+        }
+    }
+        let result = mathhelper.addNumber(5, 10);
+        console.log(result);
+    </script>
+</body>
+</html>
