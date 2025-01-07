@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Game Platform with Money</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginContainer">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <p id="loginError" class="error"></p>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <header>
+            <h1>Welcome to the Multi-Game Platform</h1>
+            <p>Balance: $<span id="balance">100</span></p>
+            <nav>
+                <button onclick="showGame('guessingGame')">Number Guessing Game</button>
+                <button onclick="showGame('ticTacToe')">Tic-Tac-Toe</button>
+                <button onclick="logout()">Logout</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="guessingGame" class="game" style="display: none;">
+                <h2>Number Guessing Game</h2>
+                <p>Guess a number between 1 and 100:</p>
+                <input type="number" id="guessInput" />
+                <button onclick="placeBet('guessingGame')">Place Bet ($10)</button>
+                <button onclick="checkGuess()">Guess</button>
+                <p id="guessResult"></p>
+            </div>
+
+            <div id="ticTacToe" class="game" style="display: none;">
+                <h2>Tic-Tac-Toe</h2>
+                <div class="grid">
+                    <div class="cell" onclick="makeMove(0)"></div>
+                    <div class="cell" onclick="makeMove(1)"></div>
+                    <div class="cell" onclick="makeMove(2)"></div>
+                    <div class="cell" onclick="makeMove(3)"></div>
+                    <div class="cell" onclick="makeMove(4)"></div>
+                    <div class="cell" onclick="makeMove(5)"></div>
+                    <div class="cell" onclick="makeMove(6)"></div>
+                    <div class="cell" onclick="makeMove(7)"></div>
+                    <div class="cell" onclick="makeMove(8)"></div>
+                </div>
+                <p id="gameStatus"></p>
+                <button onclick="resetGame()">Reset</button>
+                <button onclick="placeBet('ticTacToe')">Place Bet ($10)</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
