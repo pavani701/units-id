@@ -17,7 +17,7 @@ export default function FuncLifeCycle(){
             <h1>{text}</h1>
             <button onClick={handleButton}>increment</button>
             <button onClick={handleButtons}>decrement</button>
-            <h1>Welcome</h1>
+            <h1>Welcomee</h1>
         </div>
     )
 }
